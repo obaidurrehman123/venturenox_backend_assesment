@@ -44,8 +44,8 @@ router.patch("/updateuser/:id", updateUser);
 // route        localhost:4000/api/v1/user/updateuser/id
 // method       patch
 
-// since there was no requirement for signup and sign so i am updated image and adding url by providing id in params , other i can get
-// a user id from token save image url against the user
+// since there was no requirement for signup and signin so i am updating image and adding url by providing id in params , otherwise i can get
+// a user id from token save image url against the user.
 
 router.post("/upload/:id", upload.single("image"), updateImage);
 
